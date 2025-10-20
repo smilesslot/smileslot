@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sleek.works.gd/sitemap.xml
