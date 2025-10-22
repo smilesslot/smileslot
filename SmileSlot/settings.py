@@ -3,9 +3,6 @@ from pathlib import Path
 import os
 from decouple import config
 
-from random import choice
-from django.contrib.messages import constants as messages
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,18 +18,23 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = [
-     '.onrender.com',
+     'www.smiles.co.ke',
+     'www.smiles.work.gd',
+     'smiles.work.gd',
      '.localhost',
-     '.sleek.work.gd',
-     'sleek.work.gd'
+     'localhost',
+     '.smiles.co.ke',
+     'smiles.co.ke'
  ]
 if DEBUG:
      ALLOWED_HOSTS += [
-         'localhost',
+         'www.smiles.co.ke',
+         'www.smiles.work.gd',
+         'smiles.work.gd',
          '.localhost',
-         '.onrender.com',
-         '.sleek.work.gd',
-         'sleek.work.gd'
+         'localhost',
+         '.smiles.co.ke',
+         'smiles.co.ke'
      ]
 
 
@@ -115,7 +117,7 @@ CSRF_COOKIE_DOMAIN = None
 TENANTS_APP_LABEL = "Clinic"   # <-- your app label that contains Tenant model
 
 PUBLIC_SCHEMA_NAME = 'public'
-BASE_DOMAIN = 'sleek.work.gd'
+BASE_DOMAIN = 'smiles.co.ke'
 
 
 SITE_ID = 1
@@ -140,7 +142,7 @@ MIDDLEWARE = [
 
 
 DEFAULT_HOST = "www"
-PARENT_HOST = "sleek.work.gd/"
+PARENT_HOST = "smiles.co.ke/"
 ROOT_HOSTCONF = "SmileSlot.hosts"
 ENTERPRISES_URLCONF = "SmileSlot.urls"
 ROOT_URLCONF = 'SmileSlot.urls'
@@ -372,7 +374,7 @@ DEBUG_TOOLBAR_CONFIG = {
      "IS_RUNNING_TESTS": False,
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://sleek.work.gd',  'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://smiles.co.ke',  'http://127.0.0.1:8000']
 
 #SECURE_SSL_REDIRECT = True
 #SECURE_HSTS_SECONDS = 31536000
