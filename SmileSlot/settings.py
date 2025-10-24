@@ -238,7 +238,7 @@ if REDIS_CACHE_URL is not None:
          }
      }
 
-DATABASES_psql = {
+DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
