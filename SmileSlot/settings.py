@@ -46,6 +46,7 @@ LOG_FILE = os.path.join(RUN_DIR, 'billing-app.log')
 FEATURES_DEBUG = True
 TEMPLATE_REVERT_TO_DJANGO = True
 JS_FRAMEWORK = 'vuejs'
+BROKER_CALLABLE= 'broker-01'
 SAAS_ORGANIZATION_MODEL = 'saas.Organization'
 USE_STRIPE_V2 = True
 
@@ -198,9 +199,9 @@ if selected_db_url is None:
     DATABASES = {
         "default": {
             "ENGINE": "django_tenants.postgresql_backend",
-            "NAME": config("PGDATABASE", default="postgres"),
-            "USER": config("PGUSER", default="postgres"),
-            "PASSWORD": config("PGPASSWORD", default="postgres"),
+            "NAME": config("PGDATABASE", default="smileslot_db"),
+            "USER": config("PGUSER", default="smileslot"),
+            "PASSWORD": config("PGPASSWORD", default="smiles@400"),
             "HOST": config("PGHOST", default="localhost"),
             "PORT": config("PGPORT", default="5432"),
             "CONN_MAX_AGE": CONN_MAX_AGE,
