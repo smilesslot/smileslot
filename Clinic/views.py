@@ -371,3 +371,11 @@ def clinic_list(request):
     doctor_list = ClinicReg.objects.all()
     context = {'clinics':doctor_list}
     return render(request, "nav/clinic_slide.html", context)
+
+
+def privacy_policy(request):
+    return render(request, 'admin/privacy_policy.html')
+
+
+def terms_of_service(request):
+    return render(request, 'admin/terms_of_service.html')
