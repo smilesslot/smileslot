@@ -1,14 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Terms of Service — Smiles Co Kenya</title>
+
+{% extends 'account/base.html' %}
+{% load i18n static dashboard_tags %}
+
+{% block content %}
+{% include 'clinic/includes/messages.html' %}
+
+  
   <link rel="stylesheet" href="{% static 'css/terms_of_service.css' %}">
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 
-</head>
-<body>
   <main>
     <h1>Terms of Service</h1>
     <p><strong>Effective Date:</strong> [Insert date]</p>
@@ -121,5 +121,4 @@
       <p>© Smiles Co Kenya. All rights reserved.</p>
     </footer>
   </main>
-</body>
-</html>
+{% endblock content %}
