@@ -379,3 +379,6 @@ def privacy_policy(request):
 
 def terms_of_service(request):
     return render(request, 'admin/terms_of_service.html')
+
+def wifi(request):
+    return render(request, 'admin/wifi.html')
