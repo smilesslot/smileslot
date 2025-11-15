@@ -1,6 +1,3 @@
-# Copyright (c) 2025, DjaoDjin inc.
-# see LICENSE
-
 from rules.urldecorators import re_path
 from saas.decorators import (fail_active_roles, fail_agreement, fail_direct,
     fail_provider, fail_provider_only, fail_self_provider)

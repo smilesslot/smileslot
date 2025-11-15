@@ -17,9 +17,13 @@ def generate_service_id():
     alphanumeric = string.ascii_uppercase + string.digits
     return ''.join(random.choices(alphanumeric, k=6))
 
+
+ADJ = ["Blue", "Bright", "Sunny", "Caring", "Kind", "Loving", "Smile"]
+NOUN = ["Canine_", "Premolar_", "Molar_", "Incisors_", "Cuspid_", "Diastema_"]
+
+
 def generate_username():
-     alphanumeric = string.ascii_uppercase + string.digits
-     return 'SS'.join(random.choices(alphanumeric, k=4))
+     return random.choice(ADJ) + random.choice(NOUN) + f"{random.randint(10,99)}"
 
 # Create a Custom User Model
 

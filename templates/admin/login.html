@@ -43,7 +43,7 @@
                       type="text" 
                       class="form-control"
                       name="{{ form.username.name }}"
-                      id="{{ form.username.id_for_label }}"
+                      id="{{ form.username.id_for_name }}"
                     >
                   </div>
                   <div class="input-group input-group-outline mb-3">
@@ -106,7 +106,7 @@
                         placeholder="{{ form.password.label }}" 
                         aria-label="Password"
                         name="{{ form.password.name }}"
-                        id="{{ form.password.id_for_label }}"
+                        id="{{ form.password.id_for_password }}"
                       >
                     </div>
                     {% include 'clinic/includes/messages.html' %}
@@ -121,9 +121,11 @@
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
               <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('{% static 'icon/0bca77a5910d18c3470d7c1353d82fd9.jpg' %}');
           background-size: cover;">
-                <span class="mask bg-gradient-primary opacity-6"></span>
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">smileslot</h4>
-                <p class="text-white position-relative">Tumebeba System,Focus Na Smiles</p>
+               <span class="mask bg-gradient-primary opacity-6"></span>
+                   <img class="position-center justify-content-center mb-3"  src="{%static '/icon/smile.png'%}">
+
+                <h4 class="mt-4 text-white font-weight-bolder position-relative">smileslot</h4>
+                <p class="text-white position-relative">Tumebeba System, wewe Focus Na Smiles</p>
               </div>
             </div>
           </div>

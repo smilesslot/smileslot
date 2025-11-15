@@ -1,9 +1,3 @@
-#pylint: disable=too-many-lines
-
-# Implementation Note:
-#   The models and managers are declared in the same file to avoid messy
-#   import loops.
-
 """
 
 Subscribers and providers are both instances of ``Organization``. This is done

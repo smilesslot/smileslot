@@ -1,7 +1,3 @@
-// Copyright (c) 2023, DjaoDjin inc.
-// All rights reserved.
-// BSD 2-Clause license
-
 /*global Vue jQuery moment showMessages showErrorMessages Stripe updateBarChart updateChart getUrlParameter $ */
 
 

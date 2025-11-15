@@ -1,6 +1,3 @@
-# Copyright (c) 2025, DjaoDjin inc.
-# All rights reserved.
-#
 from __future__ import absolute_import
 
 import django.template.defaultfilters
